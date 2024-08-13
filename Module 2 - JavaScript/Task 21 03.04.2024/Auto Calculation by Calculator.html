@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Calculation by Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Price Calculation Calculator</h1>
+  <div>
+    <div class="col-md-6">
+      <label for="">Unit Price</label>
+      <input type="text" id="unitPrice" oninput="calculatePrices()">
+    </div> <br>
+
+    <div class="col-md-6">
+      <label for="">Quantity</label>
+      <input type="text" id="quantity" oninput="calculatePrices()">
+    </div> <br>
+
+    <div class="col-md-6">
+      <label for="">Total Price</label>
+      <input type="text" id="totalPrice" readonly>
+    </div> <br>
+
+    <div class="col-md-6">
+      <label for="">Discount (%)</label>
+      <input type="text" id="discount" oninput="calculatePrices()" onchange="calculatePrices()">
+    </div> <br>
+
+    <div class="col-md-6">
+      <label for="">Discount Amount</label>
+      <input type="text" id="discountAmount" readonly>
+    </div> <br>
+
+    <div class="col-md-6">
+      <label for="">Actual Price</label>
+      <input type="text" id="actualPrice" readonly>
+    </div> <br>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

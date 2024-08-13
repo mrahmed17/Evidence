@@ -1,0 +1,7 @@
+body {
+  background-image: url(img/feather.jpg);
+}
+
+ul :hover {
+  background-color: crimson;
+}
